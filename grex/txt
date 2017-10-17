@@ -1,0 +1,16 @@
+Các ký tự đặc biệt thông dụng khác được mô tả trong bảng sau:
+
+Ký tự	Mô tả
+\b	Khớp với chuỗi nằm ở biên
+Ví dụ: er\b khớp với "never" và "error" nhưng không khớp với "verb"
+\B	Khớp với chuỗi không nằm ở biên
+Ví dụ: er\B khớp với "verb" và không khớp với "error" và "never"
+\d	Khớp với chữ số. Tương đương [0-9]
+\D	Khớp với ký tự không phải số. Tương đương [^0-9]
+\w	Khớp với chữ, số và dấu gạch dưới "_". Tương đương [a-zA-Z0-9_]
+\W	Khớp với ký tự không phải chữ, số và dấu gạch dưới "_". Tương đương [^a-zA-Z0-9_]
+\cX	Khớp với CTRL+X với X thuộc [a-zA-Z]
+\xNN	Khớp với ký tự được biểu diễn bởi đúng 2 chữ số hexa.
+Ví dụ: \x41 khớp với "A"
+\uXXXX	Khớp với ký tự Unicode được biểu diễn bởi 4 chữ số hexa.
+Ví dụ: \u00A9 khớp với "©"
